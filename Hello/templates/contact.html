@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Contact{% endblock title %}
+{% block body %}
+{% load static %}
+
+<!-- Main Content -->
+<div class="container mt-4">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Feel free to reach out using the contact form below or through our other
+        contact information.</p>
+
+    <!-- Contact Form -->
+    <form method='post' action="/contact">
+        {% csrf_token %}
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputName">Name</label>
+                <input type="text" class="form-control" name='name' id="inputName" placeholder="Your Name">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" name='email' id="inputEmail" placeholder="Your Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputMessage">Message</label>
+            <textarea class="form-control" name='message' id="inputMessage" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <hr class="my-4">
+
+    <!-- Contact Information -->
+    <h4>Contact Information</h4>
+    <p>Email: info@icecreamshop.com</p>
+    <p>Phone: +91 123-4567-890</p>
+    <p>Address: 123 Ice Cream Street, City, State, 12345</p>
+</div>
+{% endblock body %}

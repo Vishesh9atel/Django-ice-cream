@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Services{% endblock title %}
+{% block body %}
+{%load static%}
+<div class="container mt-4">
+    <h2>Our Services</h2>
+    <p>Discover the delightful services we offer at our ice cream shop. From classic scoops to custom creations, we
+        have something for every ice cream lover.</p>
+
+    <!-- Service Cards -->
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{% static 'pictures/Chocolate Chip Cookie Dough.jpg' %}" class="card-img-top" alt="Service 1 Image">
+                <div class="card-body">
+                    <h5 class="card-title">Premium Flavors</h5>
+                    <p class="card-text">Indulge in our premium ice cream flavors made from the finest
+                        ingredients.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{% static 'pictures/Chocolate Chip Cookie Dough.jpg' %}" class="card-img-top" alt="Service 2 Image">
+                <div class="card-body">
+                    <h5 class="card-title">Custom Creations</h5>
+                    <p class="card-text">Create your own ice cream masterpiece with our selection of toppings and
+                        flavors.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{% static 'pictures/Chocolate Chip Cookie Dough.jpg' %}"
+                 class="card-img-top" alt="Service 3 Image">
+                <div class="card-body">
+                    <h5 class="card-title">Event Catering</h5>
+                    <p class="card-text">Make your special occasions memorable with our ice cream catering services.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

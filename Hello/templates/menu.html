@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}ICE CREAM{% endblock title %}
+{% block body %}
+
+
+<!-- Main Content -->
+<div class="container-fluid mx-10 p-10">
+  <!-- Ice Cream Menu -->
+  <h2>Our Delicious Ice Cream Menu</h2>
+  <div class="d-flex flex-wrap">
+  <div class="row">
+      <div class="col-md-4">
+          <div class="card">
+              <img src="{% static 'pictures/Chocolate Chip Cookie Dough.jpg' %}" class="card-img-top img-fluid" alt="Chocolate Chip Cookie Dough" style="height: 300px;" >
+              <div class="card-body">
+                  <h5 class="card-title">Chocolate Chip Cookie Dough</h5>
+                  <p class="card-text">Rich vanilla ice cream with chunks of chocolate chip cookie dough and chocolate chips.</p>
+                  <p class="card-text">Price: $5.99</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+              <img src="{% static 'pictures/Strawberry Swirl.jpg' %}" class="card-img-top img-fluid" alt="Strawberry Swirl" style="height: 300px;">
+              <div class="card-body">
+                  <h5 class="card-title">Strawberry Swirl</h5>
+                  <p class="card-text">Creamy strawberry ice cream swirled with sweet strawberry sauce.</p>
+                  <p class="card-text">Price: $4.99</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+              <img src="{% static 'pictures/Mint Chocolate Chip.jpg' %}" class="card-img-top img-fluid" alt="Mint Chocolate Chip" style="height: 300px;">
+              <div class="card-body">
+                  <h5 class="card-title">Mint Chocolate Chip</h5>
+                  <p class="card-text">Refreshing mint ice cream with chocolate chips throughout.</p>
+                  <p class="card-text">Price: $6.49</p>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock body %}
